@@ -2,6 +2,7 @@
 .dockerignore
 .gitignore
 Dockerfile
+Containerfile
 tests
 LICENSE
 Makefile
