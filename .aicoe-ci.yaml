@@ -3,6 +3,6 @@ check:
 build:
   build-stratergy: "Dockerfile"
   registry: "quay.io"
-  registry-org: "modh"
+  registry-org: "harshad16"
   registry-project: "odh-manifests"
-  registry-secret: "modh-pusher-secret"
+  registry-secret: "thoth-station-thoth-pusher-secret"
