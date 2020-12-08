@@ -9,10 +9,4 @@ spec:
   replicas: 1
   serviceAccountName: prometheus-k8s
   securityContext: {}
-  serviceMonitorSelector:
-      matchLabels:
-        team: opendatahub
-  podMonitorSelector:
-      matchLabels:
-        team: opendatahub
   ruleSelector: {}
