@@ -71,21 +71,6 @@ spec:
             configMapKeyRef:
               name: $(jupyterhub_groups_config)
               key: allowed_groups
-        - name: JUPYTERHUB_CRYPT_KEY
-          valueFrom:
-            secretKeyRef:
-              name: $(jupyterhub_secret)
-              key: JUPYTERHUB_CRYPT_KEY
-        - name: JPY_COOKIE_SECRET
-          valueFrom:
-            secretKeyRef:
-              name: $(jupyterhub_secret)
-              key: JPY_COOKIE_SECRET
-        - name: CONFIGPROXY_AUTH_TOKEN
-          valueFrom:
-            secretKeyRef:
-              name: $(jupyterhub_secret)
-              key: CONFIGPROXY_AUTH_TOKEN
         image: jupyterhub-img:latest
         name: jupyterhub
         ports:
