@@ -5,8 +5,6 @@ varReference:
   kind: ImageStream
 - path: spec/*
   kind: ImageStream
-- path: spec/tags/from/name
-  kind: ImageStream
 
 - path: metadata/labels/*
   kind: BuildConfig
